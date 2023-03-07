@@ -1,0 +1,17 @@
+.contenido img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.descripcion {
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.descripcion p {
+  font-size: 1.8rem;
+}

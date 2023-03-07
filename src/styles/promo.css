@@ -1,0 +1,22 @@
+.grid-promo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-promo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contenido-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column: 2/3;
+}
+
+.descripcion-promo {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 2rem;
+}

@@ -1,0 +1,111 @@
+.lista-remeras {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .lista-remeras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.remera {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1),
+    0 0 50px -10px rgba(0, 0, 0, 0.1);
+}
+
+.remera .titulo {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.remera .link {
+  padding: 0.5rem;
+  background-color: var(--black);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #e1e1e1;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.remera .link:hover {
+  background-color: var(--primary);
+}
+
+.remera-unitaria {
+  padding: 10rem 0;
+  width: 75%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.remera-unitaria .contenido {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.remera-unitaria h3 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.remera-unitaria .descripcion {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #575656;
+}
+
+.remera-unitaria .precio {
+  font-size: 2.5rem;
+}
+
+.remera-unitaria .contenido form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.remera-unitaria label {
+  font-weight: 700;
+}
+.remera-unitaria select {
+  all: unset;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+}
+.remera-unitaria select:focus-within {
+  outline: 1px solid var(--primary);
+}
+.remera-unitaria input[type="submit"] {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.remera-unitaria input[type="submit"]:hover {
+  background-color: var(--black);
+}
