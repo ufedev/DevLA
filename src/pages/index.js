@@ -47,7 +47,7 @@ export default function Home({ remeras, entradas, promos }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const [rem, ent, pr] = await Promise.all([
     fetch(`${process.env.API_URL}/api/remeras?populate=imagen`),
     fetch(`${process.env.API_URL}/api/posts?populate=imagen`),

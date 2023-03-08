@@ -14,7 +14,8 @@ export default function Tienda({ remeras }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
+  // para evitar tiempos de carga con vercel y render (donde esta alojado el back)
   const req = await fetch(`${process.env.API_URL}/api/remeras?populate=imagen`)
   const { data } = await req.json()
   return {
